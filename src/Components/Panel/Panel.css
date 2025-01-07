@@ -1,0 +1,186 @@
+/* css cho chuyển động showList */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms, transform 800ms;
+}
+
+.panel__section {
+  flex: 0 0 11.875rem;
+  margin: 0 1.25rem 1.25rem 0;
+  min-width: 0;
+}
+
+.panel__category-list-header {
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  margin-bottom: 0.625rem;
+  text-transform: capitalize;
+}
+
+.panel__category-list-header-icon {
+  margin-right: 10px;
+}
+
+.panel__category-list-body {
+  text-transform: capitalize;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.panel__category-list-main {
+  font-weight: 600;
+}
+
+.panel__category-list-sub {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.panel__category-list-body-icon {
+  position: absolute;
+  left: -2px;
+  font-size: 16px;
+  fill: var(--primary-color);
+  opacity: 0;
+}
+
+.panel__category-list-item {
+  padding: 8px 10px 8px 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.panel__category-list-item.active__list {
+  color: var(--primary-color);
+}
+
+.active__list .panel__category-list-body-icon {
+  opacity: 1;
+}
+
+.panel__category-list-footer {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.panel__search-filter {
+  display: flex;
+  margin-top: 30px;
+}
+
+.panel__search-filter__text {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.panel__search-filter svg {
+  font-size: 13px;
+  position: relative;
+  top: 3px;
+}
+
+.panel__facet-filter__header {
+  margin-bottom: 10px;
+}
+
+.item-checkbox__control {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.item-checkbox__label {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 1rem;
+  max-height: 3rem;
+  word-wrap: break-word;
+}
+
+.panel__price-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 10px 0;
+}
+
+.panel__price-input__line {
+  background: #bdbdbd;
+  flex: 1;
+  height: 1px;
+  margin: 0 0.625rem;
+}
+
+.panel__price-input__item {
+  width: 5rem;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  border-radius: 0.125rem;
+  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05);
+  height: 1.875rem;
+  padding: 1px 2px 1px 5px;
+  font-size: 12px;
+}
+
+.panel__price-error-text {
+  color: #ff424f;
+  font-size: 12px;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.panel__btn {
+  width: 100%;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.1s linear;
+}
+
+.panel__btn:hover {
+  opacity: 0.8;
+}
+
+.panel__rate-filter-item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 1.5625rem;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+.panel__rate-filter-item-icon {
+  margin-right: 4px;
+  color: var(--star-color);
+}
+
+.remove-all-btn {
+  margin-top: 20px;
+}

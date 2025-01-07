@@ -1,0 +1,8 @@
+import Home from "./Home";
+import Login from "./Login";
+import Register from "./Register";
+import Product from "./Product";
+import Cart from "./Cart";
+import Checkout from "./Checkout";
+
+export { Home, Login, Register, Product, Cart, Checkout };

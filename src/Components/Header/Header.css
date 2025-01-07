@@ -1,0 +1,257 @@
+.app_header {
+  background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+
+.header-search-wrapper {
+  padding: 16px 0 6px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  height: 50px;
+  width: 162px;
+  fill: #fff;
+  position: relative;
+  top: -0.1875rem;
+  padding-right: 40px;
+}
+
+.header-search__search-section {
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.header__searchbar {
+  display: flex;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.09);
+  width: 100%;
+  position: relative;
+}
+
+.header-search__search-section input {
+  display: flex;
+  flex: 1;
+  padding: 12.5px 15px;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.header__search-icon {
+  border: none;
+  outline: none;
+  margin: 3px;
+  padding: 0 20px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__search-icon:hover {
+  opacity: 0.9;
+}
+
+.header__searchbar-popup {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.header__searchbar-popup__list {
+  font-size: 14px;
+}
+
+.header__searchbar-popup__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.header__searchbar-popup__item:hover {
+  background-color: #fafafa;
+}
+
+.header__searchbar-popup__item-text {
+  flex: 1;
+}
+
+.search__section-list {
+  display: flex;
+  font-size: 12px;
+  color: #fff;
+  padding-top: 6px;
+}
+
+.search__section-item {
+  cursor: pointer;
+  margin: 5px 10px 4px 0;
+  transition: all linear 0.05s;
+}
+
+.search__section-item:hover {
+  opacity: 0.8;
+}
+
+.header-search__cart-section {
+  margin: 0 10px;
+  flex: 1;
+}
+
+.cart__section-wrapper {
+  padding: 10px 0;
+  color: #fff;
+  position: relative;
+}
+
+.cart__section-wrapper:hover .cart__section-popover {
+  display: block;
+}
+
+.cart__section-wrapper-icon:hover {
+  cursor: pointer;
+}
+
+.cart__section-icon {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cart__section-number {
+  width: 25px;
+  font-size: 14px;
+  position: absolute;
+  right: -11px;
+  top: 5px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: 0.125rem solid var(--primary-color);
+  border-radius: 43%;
+  color: var(--primary-color);
+}
+
+.cart__section-popover {
+  top: calc(100% - 5px);
+  right: -15px;
+  transform-origin: calc(100% - 30px) 0%;
+  animation: popover-enter 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.cart__popover-arrow {
+  top: -8px;
+  right: 15px;
+}
+
+.cart__popover-box {
+  width: 400px;
+}
+
+.cart__popover-box-subheading {
+  padding: 12px 10px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.cart__popover-box-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__popover-box-item {
+  padding: 12px 10px;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+}
+
+.cart__popover-box-item:hover {
+  background-color: #f8f8f8;
+}
+
+.item__img {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.item__detail {
+  flex: 1;
+  overflow: hidden;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.item__detail-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.item__detail-price {
+  margin-left: 25px;
+  color: var(--primary-color);
+}
+
+.cart__popover-box-footer {
+  padding: 12px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart__popover-box-footer-text {
+  font-size: 13px;
+}
+
+.cart__popover-box-footer-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.cart__popover-box-footer-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Css Cart Empty */
+.cart__empty {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.cart__empty-img {
+  background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/c44984f18d2d2211.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 6.25rem;
+  width: 6.25rem;
+}
+
+.cart__empty-text {
+  font-size: 14px;
+  color: #222;
+}

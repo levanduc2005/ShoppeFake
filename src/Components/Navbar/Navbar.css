@@ -1,0 +1,249 @@
+/* Css Chung */
+
+.navbar__wrapper {
+  color: #fff;
+  height: 2.125rem;
+}
+
+.navbar__wrapper.navbar__cart {
+  background: linear-gradient(-180deg, #f53d2d, #f63);
+  height: 2.3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__wall::after {
+  border-left: 1px solid hsla(0, 0%, 100%, 0.22);
+  border-right: 1px solid hsla(0, 0%, 100%, 0.22);
+  content: "";
+  height: 0.9375rem;
+  left: -10px;
+  position: absolute;
+  top: calc(50% - 7px);
+  width: 0;
+}
+
+.navbar__wall {
+  position: relative;
+  margin-left: 20px;
+}
+
+.navbar__list {
+  display: flex;
+  font-size: 13px;
+}
+
+.navbar__icon-link {
+  margin: -4px 5px 0 5px;
+  height: 16px;
+  width: 16px;
+}
+
+.navbar__item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.navbar__item {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.navbar__right .navbar__item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.navbar__item-separator {
+  border-right: 1px solid hsla(0, 0%, 100%, 0.4);
+  height: 0.8125rem;
+}
+
+.qr-code__wrapper {
+  position: relative;
+}
+
+.item-download {
+  background-color: #fff;
+  top: calc(100% - 10px);
+  left: -10px;
+  margin-top: 0.625rem;
+  padding: 2px;
+  width: 11.25rem;
+  position: absolute;
+  box-shadow: 0 1px 1.125rem rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 100;
+}
+
+.qr-code__wrapper:hover .item-download {
+  display: block;
+}
+
+.qr-img {
+  height: 11.25rem;
+  width: 11.25rem;
+}
+
+.item-download__list {
+  flex-wrap: wrap;
+  padding: 0 0.9375rem 0.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-download__list img {
+  width: 100%;
+}
+
+.item-download__app {
+  margin-top: 0.3125rem;
+  width: 4.375rem;
+}
+
+.notify-popover__wrapper {
+  position: relative;
+}
+
+.notify-popover__wrapper .navbar__item {
+  margin: 10px 0;
+}
+
+.notify-popover {
+  top: 38px;
+  right: 0;
+  animation: popover-enter 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+  transform-origin: calc(100% - 30px) 0%;
+}
+
+.notify-popover__wrapper:hover .notify-popover {
+  display: block;
+}
+
+.notify-popover__arrow {
+  top: -8px;
+  right: 20px;
+}
+
+.notify-popover__box {
+  width: 25rem;
+}
+
+.popover__header {
+  height: 2.5rem;
+  padding: 0 12px;
+  color: rgba(0, 0, 0, 0.26);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.popover__content-item {
+  background-color: #fff2ee;
+  padding: 0.5rem 0.625rem;
+  cursor: pointer;
+  display: flex;
+  transition: all linear 0.1s;
+}
+
+.popover__content-item:hover {
+  background-color: #f7f7f799;
+}
+
+.item-img {
+  height: 2.5rem;
+  margin-right: 0.3125rem;
+  width: 2.5rem;
+  background-color: #f5f5f5;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.item-img img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.item-text {
+  overflow-wrap: break-word;
+}
+
+.item-text__subheading {
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item-text__note {
+  font-size: 12px;
+  line-height: 0.9375rem;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.item-text__img {
+  background-color: #ffffff;
+  background-position: 50%;
+  height: 10.125rem;
+  width: 20.25rem;
+}
+
+.item-text__img img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.popover__btn {
+  padding: 10px 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.popover__btn:hover {
+  background-color: #f5f5f5;
+  transition: all linear 0.1s;
+}
+
+.language__wrapper {
+  position: relative;
+}
+
+.language__popover {
+  animation: popover-enter 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+  transform-origin: calc(100% - 30px) 0%;
+  top: 38px;
+  right: 0;
+}
+
+.language__wrapper:hover .language__popover {
+  display: block;
+}
+
+.language__popover-box {
+  width: 15rem;
+}
+
+.language__popover-arrow {
+  top: -8px;
+  right: 45px;
+}
+
+.language__popover-item {
+  padding: 12px 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.language__popover-item:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
