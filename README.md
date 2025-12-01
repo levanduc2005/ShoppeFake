@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# Shoppe - Ứng dụng E-commerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Đây là một ứng dụng e-commerce hiện đại được xây dựng với React, cho phép người dùng duyệt sản phẩm, quản lý giỏ hàng và thực hiện thanh toán.
 
-## Available Scripts
+## 🚀 Tính Năng Chính
 
-In the project directory, you can run:
+- ✅ **Trang chủ** - Hiển thị quảng cáo và danh sách sản phẩm
+- ✅ **Đăng ký & Đăng nhập** - Hệ thống xác thực người dùng
+- ✅ **Duyệt sản phẩm** - Xem chi tiết các sản phẩm
+- ✅ **Giỏ hàng** - Thêm/xóa sản phẩm, quản lý số lượng
+- ✅ **Thanh toán** - Hoàn tất đơn hàng
+- ✅ **Lưu trữ địa phương** - Dữ liệu giỏ hàng được lưu trong localStorage
+- ✅ **Định dạng giá tiền** - Hỗ trợ định dạng tiền tệ Việt Nam
 
-### `npm start`
+## 📋 Yêu Cầu
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (phiên bản 14 trở lên)
+- npm hoặc yarn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Cài Đặt
 
-### `npm test`
+1. Clone hoặc tải về project:
+```bash
+cd project_shoppe
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Cài đặt các dependency:
+```bash
+npm install
+```
 
-### `npm run build`
+## 🏃 Chạy Ứng Dụng
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Chế độ phát triển
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ứng dụng sẽ chạy tại [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+Trang sẽ tự động tải lại khi bạn thực hiện thay đổi.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Build cho production
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tạo một bản build được tối ưu hóa cho production trong thư mục `build`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Chạy kiểm thử
 
-## Learn More
+```bash
+npm test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Khởi chạy test runner ở chế độ interactive watch.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 Cấu Trúc Project
 
-### Code Splitting
+```
+src/
+├── Components/          # Các component React
+│   ├── Header/         # Header component
+│   ├── Navbar/         # Navigation bar
+│   ├── Footer/         # Footer
+│   ├── Advertisement/  # Quảng cáo
+│   ├── MenuItem/       # Menu item
+│   ├── ListProduct/    # Danh sách sản phẩm
+│   ├── ProductComponent/  # Chi tiết sản phẩm
+│   ├── CartComponent/  # Giỏ hàng
+│   ├── CheckoutComponent/ # Thanh toán
+│   ├── LoginComponent/ # Đăng nhập
+│   └── ...
+├── pages/              # Các trang chính
+│   ├── Home.js        # Trang chủ
+│   ├── Product.js     # Trang sản phẩm
+│   ├── Cart.js        # Trang giỏ hàng
+│   ├── Checkout.js    # Trang thanh toán
+│   ├── Login.js       # Trang đăng nhập
+│   ├── Register.js    # Trang đăng ký
+│   └── ...
+├── constants/          # Hằng số và dữ liệu
+│   ├── data.js        # Dữ liệu sản phẩm
+│   └── images.js      # Đường dẫn hình ảnh
+├── assets/            # Hình ảnh và tài nguyên
+└── App.js            # Component chính
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📦 Công Nghệ Sử Dụng
 
-### Analyzing the Bundle Size
+- **React** (v18.3.1) - UI library
+- **React Router DOM** (v6.27.0) - Định tuyến trang
+- **React Icons** (v5.3.0) - Thư viện icon
+- **FontAwesome** - Icon set
+- **React Transition Group** - Animation
+- **localStorage** - Lưu trữ dữ liệu cục bộ
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 💡 Các Tính Năng Chính
 
-### Making a Progressive Web App
+### Quản Lý Giỏ Hàng
+- Thêm sản phẩm vào giỏ hàng
+- Xóa sản phẩm khỏi giỏ hàng
+- Cập nhật số lượng
+- Lưu giỏ hàng vào localStorage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Định Dạng Giá
+- Hỗ trợ định dạng tiền tệ Việt Nam (VND)
+- Hiển thị giá với 3 chữ số thập phân
 
-### Advanced Configuration
+### Routing
+- Trang chủ (Home)
+- Chi tiết sản phẩm (Product)
+- Giỏ hàng (Cart)
+- Thanh toán (Checkout)
+- Đăng nhập (Login)
+- Đăng ký (Register)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🎨 Styling
 
-### Deployment
+Project sử dụng CSS custom cho các component, các file CSS được đặt cùng với component:
+- `Component.css` - Styles cho component tương ứng
+- `App.css` - Global styles
+- `index.css` - Base styles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 Ghi Chú
 
-### `npm run build` fails to minify
+- Dữ liệu giỏ hàng được lưu trong `localStorage` với key `"cart"`
+- Ứng dụng hỗ trợ định dạng tiền tệ Việt Nam
+- Sử dụng React Router v6 cho routing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
